@@ -6,7 +6,7 @@ this repo serves the purpose of updating the html_cs_run_parse gem out on RubyGe
 
 How to update HTMLCS.JS that is being utilized in the Ruby Gem
 1. Pull HTMLCS Down from github(URL: https://github.com/squizlabs/HTML_CodeSniffer), place repo in html_cs directory, Build HTMLCS Utilizing grunt see instructions in the URL Above.
-2. Alter the line of code in the built HTMLCS.js(in the build directory)
+2. Alter the line of code in the built HTMLCS.js(in the build directory of HTML CS)
 from -  console.log("[HTMLCS] "+t+"|"+e.code+"|"+n+"|"+i+"|"+e.msg+"|"+o)}};
 to -  console.error("[HTMLCS] "+t+"|"+e.code+"|"+n+"|"+i+"|"+e.msg+"|"+o)}}; 
 3. Run the js file in the build directory as instructed in the instructions from the url above (this occurs in html_cs.rb)
