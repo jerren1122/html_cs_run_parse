@@ -1,4 +1,4 @@
-require './utility/parse_machine'
+require 'utility/parse_machine'
 
 #this gem is specifically for running HTMLCS
 class HTMLCS
