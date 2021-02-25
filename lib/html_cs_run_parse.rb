@@ -1,4 +1,4 @@
-require '../html_cs/utility/parse_machine.rb'
+require './utility/parse_machine'
 
 #this gem is specifically for running HTMLCS
 class HTMLCS
