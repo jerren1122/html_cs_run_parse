@@ -1,6 +1,6 @@
 class RowHTML < HTML
   def build
-    self.send("data_location=", './data/html_data/row_data.yaml')
+    self.send("data_location=", File.expand_path("../../../data/html_data/row_data.yaml", __FILE__))
     row = read_yaml(data_location, "TR")
     data_cell = read_yaml(data_location, "TD")
     cells = object.values.map do |key|

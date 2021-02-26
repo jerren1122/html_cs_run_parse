@@ -3,7 +3,7 @@ require 'page_html'
 class AppHTML < HTML
   attr_accessor(:pages)
   def initialize(object)
-    self.send("data_location=", './data/html_data/app_data.yaml')
+    self.send("data_location=", File.expand_path("../../../data/html_data/app_data.yaml", __FILE__))
     self.send("pages=", object.pages)
     super(object)
   end
@@ -51,7 +51,7 @@ class AppHTML < HTML
     html.gsub!("sample", ats + hb)
 
     #add the style sheet to the beginning
-    ssloc = "./data/html_data/style_script.yaml"
+    ssloc = File.expand_path("../../../data/html_data/style_script.yaml", __FILE__)
     style = read_yaml(ssloc, "STYLE")
     html = style + html
 

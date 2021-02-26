@@ -3,7 +3,7 @@ require 'row_html'
 class PageHTML < HTML
   attr_accessor(:rows)
   def initialize(object)
-    self.send("data_location=", './data/html_data/page_data.yaml')
+    self.send("data_location=", File.expand_path("../../../data/html_data/page_data.yaml", __FILE__))
     self.send("rows=", object.rows)
     super(object)
   end
