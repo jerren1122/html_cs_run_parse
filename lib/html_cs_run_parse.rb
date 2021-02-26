@@ -1,5 +1,5 @@
 require 'utility/parse_machine'
-require 'pa11y_compilation_2.0/execution'
+require 'html_compilation/execution'
 
 #this gem is specifically for running HTMLCS
 class HTMLCS
