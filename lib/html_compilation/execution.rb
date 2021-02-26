@@ -4,7 +4,7 @@ require 'classes/objects/app'
 require 'classes/setup/conditioning.rb'
 require 'classes/setup/output_generation.rb'
 class Execution
-  def build(file_prefix = "./data/")
+  def build(file_prefix = "./data")
     app = Application.new
 
     setup = Setup.new(file_prefix + "/input")

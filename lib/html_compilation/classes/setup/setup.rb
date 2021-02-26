@@ -18,14 +18,14 @@ class Setup
     @env = rt.retrieve_env
   end
 
-  def main_setup(app, file_prefix = "./data/")
+  def main_setup(app, file_prefix = "./data")
     app_initial_setup(app)
     pages = page_initial_setup
     app_additional_setup(app, pages)
     pages.each_with_index do |page, index|
       rows = row_initial_setup(index)
-      row_additional_setup(rows, file_prefix + "scores.yaml")
-      page_additional_setup(app, page, rows, file_prefix + "suppressed_rules.yaml")
+      row_additional_setup(rows, file_prefix + "/scores.yaml")
+      page_additional_setup(app, page, rows, file_prefix + "/suppressed_rules.yaml")
     end
   end
 

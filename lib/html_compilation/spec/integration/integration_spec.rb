@@ -27,7 +27,7 @@ describe 'integration spec' do
       @setup = Setup.new("./spec/unit/data/input")
       @app = Application.new
       allow(@app).to receive(:application_name).and_return 'sample app'
-      @setup.main_setup(@app, './spec/unit/data/')
+              @setup.main_setup(@app, './spec/unit/data')
     end
 
 
@@ -76,7 +76,7 @@ describe 'integration spec' do
       @setup = Setup.new("./spec/unit/data/input")
       @app = Application.new
       allow(@app).to receive(:application_name).and_return 'sample app'
-      @setup.main_setup(@app, './spec/unit/data/')
+      @setup.main_setup(@app, './spec/unit/data')
       @conditioning = Conditioning.new()
     end
     describe 'page level' do
