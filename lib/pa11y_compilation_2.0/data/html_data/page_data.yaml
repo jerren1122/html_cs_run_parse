@@ -1,0 +1,37 @@
+##OPTIONAL VALUES
+PAGE_IMAGE: '<img src=".\files\sample.png" class="content_image">'
+PAGE_URL: "<h1 class=\"url-for-page\">URL: sample</h1>"
+PAGE_SUPPRESSED_RULES_AREA: "<table class=\"page_suppressed_rules_table\">
+                                               <tbody class=\"page_suppressed_rules_table_body\">
+                                               <tr>
+                                                   <th><strong>Suppressed Page Rules</strong></th>
+                                               </tr>
+                                               sample
+                                               </tbody> </table>"
+PAGE_SUPPRESSED_RULES_TABLE_VALUES: "<tr><td>sample</td></tr>"
+
+
+##LIST SECTION
+COLLAPSIBLE_LIST_SECTION: "<div class=\"collapsible-list\">sample</div>"
+COLLAPSIBLE_BUTTON: "<button class=\"collapsible\">
+                               <Strong>Sample Page Name</Strong>
+                               <strong>Total Number of Errors = </strong> sample total number of errors
+                               <strong>Page Score = </strong>sample page score
+                           </button>"
+
+
+CONTENT: "<div class=\"content\"> sample </div>"
+PAGE_INFO: "<div class=\"content_image_and_suppressed_rules_area\"> sample </div>"
+
+WARNING_LIST_AREA: "<div class=\"warning_list_area_div\">
+                               <table class=\"warning_list_item_table\">
+                                   <tbody class=\"warning_list_table_body\">
+                                   <tr>
+                                    header_sample
+                                   </tr>
+                                   rows_sample
+                                   </tbody>
+                               </table>
+                           </div>"
+
+WARNING_LIST_HEADERS: "<th>sample</th>"

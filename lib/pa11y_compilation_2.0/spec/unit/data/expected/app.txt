@@ -1,0 +1,29 @@
+<style> /*page header section*/ #page_header { display: block; text-align: center; font-family: Apex New Bold, sans-serif; font-weight: bold }
+/*application overview section*/ #application_overview_section { display: block; padding-top: 10px }
+#chart_image { margin-left: auto; margin-right: auto; display: inline-block; width: 47%; padding-bottom: 10px }
+#application_overview_table_section { display: inline; margin-bottom: 10px; font-family: Apex New Bold, sans-serif; }
+#suppressed_application_errors_table { border-color: #5ba63c; display: inline-block; padding-top: 10px; width: 49%; vertical-align: top; }
+#suppressed_application_errors_table_body { display: block; overflow-y: scroll; height: 70px }
+#application_overview_information_table { display: inline-block; border-color: #5ba63c; padding-top: 10px; width: 49%; vertical-align: top; }
+#application_overview_information_table_body { display: inline-block; height: 70px; } /*Collapsible Section*/ .collapsible { background-color: #ffffff; color: black; cursor: pointer; padding: 18px; width: 100%; text-align: left; outline: none; font-size: 15px; font-family: Apex New Bold, sans-serif; }
+.active, .collapsible:hover { background-color: #ADEFD1FF; }
+.collapsible-list { position: static; font-family: Apex New Bold, sans-serif; border-color: #F0EAD6; border-style: solid; border-width: thick; border-collapse: collapse; } /*Collapsible Content Section*/ .content { padding: 18px; display: none; overflow: hidden; background-color: #F0EAD6; } /*Collapsible Content image and suppressed rules Section*/ .content_image_and_suppressed_rules_area { width: 100%; display: block; }
+.url-for-page { font-size: 18px; font-family: Apex New Bold, sans-serif; }
+.content_image { display: inline-block; margin-left: auto; margin-right: auto; width: 100%; }
+.page_suppressed_rules_table { display: inline-block; vertical-align: top; border-collapse: collapse; padding-left: 1%; width: 50%
+}
+.page_suppressed_rules_table_body { display: block; width: 100% }
+.warning_list_area_div { display: block; width: 100%; overflow-x: scroll; }
+.warning_list_table_body { display: block; border-collapse: collapse;
+}
+.warning_list_item_table { table-layout:fixed; }
+
+.warning_list_table_body > tr { border-style: solid; }
+
+.warning_list_table_body > tr > td { border-style: solid;}
+
+</style><html><h1 id="page_header">sample name utilizing: sample env</h1><body id="whole body"><div id="application_overview_section"><div id="application_overview_table_section"><table id="application_overview_information_table"> <tbody id="application_overview_information_table_body"> <tr> <th>Application Score</th> <th>Number of Errors</th> <th>Number of Pages</th> </tr>
+<td>46</td><td>4</td><td>2</td>
+</tbody> </table></div><img src=".\files\chart.png" alt="tracking chart" id="chart_image"></div><div class="collapsible-list"><button class="collapsible"> <Strong>sample page</Strong> <strong>Total Number of Errors = </strong> 2 <strong>Page Score = </strong>22 </button><div class="content"> <div class="content_image_and_suppressed_rules_area"> <h1 class="url-for-page">URL: www.wwe.wwf</h1><img src=".\files\sample page.png" class="content_image"><table class="page_suppressed_rules_table"> <tbody class="page_suppressed_rules_table_body"> <tr> <th><strong>Suppressed Page Rules</strong></th> </tr> <tr><td><strong>Guideline: </strong>guideline 1<strong> Content: </strong>content 1</td></tr><tr><td><strong>Guideline: </strong>guideline 2<strong> Content: </strong>content 2</td></tr><tr><td><strong>Guideline: </strong>guideline 3<strong> Content: </strong>content 3</td></tr> </tbody> </table> </div><div class="warning_list_area_div"> <table class="warning_list_item_table"> <tbody class="warning_list_table_body"> <tr> <th>guideline</th><th>html_path</th><th>content</th><th>score</th><th>error_warning</th><th>instances</th><th>instances</th> </tr> <tr><td>sample0</td><td>sample1</td><td>sample2</td><td>3</td><td>sample4</td><td>5</td><td>5</td></tr><tr><td>sample0</td><td>sample1</td><td>sample2</td><td>3</td><td>sample4</td><td>5</td><td>5</td></tr> </tbody> </table> </div> </div></div><div class="collapsible-list"><button class="collapsible"> <Strong>sample page 2</Strong> <strong>Total Number of Errors = </strong> 2 <strong>Page Score = </strong>24 </button><div class="content"> <div class="content_image_and_suppressed_rules_area"> <h1 class="url-for-page">URL: www.wwe.wwr</h1><img src=".\files\sample page 2.png" class="content_image"><table class="page_suppressed_rules_table"> <tbody class="page_suppressed_rules_table_body"> <tr> <th><strong>Suppressed Page Rules</strong></th> </tr> <tr><td><strong>Guideline: </strong>guideline 1<strong> Content: </strong>content 1</td></tr><tr><td><strong>Guideline: </strong>guideline 2<strong> Content: </strong>content 2</td></tr><tr><td><strong>Guideline: </strong>guideline 3<strong> Content: </strong>content 3</td></tr> </tbody> </table> </div><div class="warning_list_area_div"> <table class="warning_list_item_table"> <tbody class="warning_list_table_body"> <tr> <th>guideline</th><th>html_path</th><th>content</th><th>score</th><th>error_warning</th><th>instances</th><th>instances</th> </tr> <tr><td>sample0</td><td>sample1</td><td>sample2</td><td>3</td><td>sample4</td><td>5</td><td>5</td></tr><tr><td>sample0</td><td>sample1</td><td>sample2</td><td>3</td><td>sample4</td><td>5</td><td>5</td></tr> </tbody> </table> </div> </div></div></body></html><script> var coll = document.getElementsByClassName("collapsible"); var i;
+for (i = 0; i < coll.length; i++) { coll[i].addEventListener("click", function () { this.classList.toggle("active"); var content = this.nextElementSibling; if (content.style.display === "block") { content.style.display = "none"; } else { content.style.display = "block"; } }); }
+</script>

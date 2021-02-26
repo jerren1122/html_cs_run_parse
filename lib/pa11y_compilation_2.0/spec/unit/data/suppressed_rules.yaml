@@ -1,0 +1,12 @@
+GLOBAL_LEVEL: &global_level
+  GLOBAL: ['{:guideline=>"global sample", :content=>"sample content"}']
+
+SAMPLE_APP:
+  <<: *global_level
+  APP: ['{:guideline=>"app sample", :content=>"sample content 1"}', '{:guideline=>"WCAG2AA.Principle1.Guideline1_1.1_1_1.H37", :content=> "94"}']
+  SAMPLE_PAGE1: ['{:guideline=>"sample 2", :content=>"sample content 2"}']
+
+GOOGLE:
+  <<: *global_level
+  APP: ['{:guideline=>"app sample", :content=>"sample content 1"}', '{:guideline=>"WCAG2AA.Principle1.Guideline1_1.1_1_1.H37", :content=> "94"}']
+  SAMPLE_PAGE1: ['{:guideline=>"sample 2", :content=>"sample content 2"}']

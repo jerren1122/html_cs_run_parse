@@ -1,4 +1,5 @@
 require 'utility/parse_machine'
+require 'pa11y_compilation_2.0/execution'
 
 #this gem is specifically for running HTMLCS
 class HTMLCS
@@ -8,5 +9,10 @@ class HTMLCS
     output = browser.driver.manage.logs.get(:browser)
     parse = ParseMachine.new
     parse.htmlcs_parse(output, file_name)
+  end
+
+  def self.compile_html_cs(data_location)
+    exec = Execution.new
+    exec.build(data_location)
   end
 end

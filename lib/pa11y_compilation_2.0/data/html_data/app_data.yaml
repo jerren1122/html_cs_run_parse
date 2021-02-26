@@ -1,0 +1,39 @@
+APPLICATION:
+
+#includes everything
+HTML: "<html>sample</html>"
+
+# Style sheet goes here
+
+#goes in HTML
+APPLICATION_TITLE_SECTION: "<h1 id=\"page_header\">sample</h1>"
+
+#goes in HTML, holds all other content. including page content
+HTML_BODY: "<body id=\"whole body\">sample</body>"
+
+#goes in HTML body
+APPLICATION_OVERVIEW_SECTION: "<div id=\"application_overview_section\">sample</div>"
+
+#goes in application overview section
+CHART_IMAGE: '<img src=".\files\chart.png" alt="tracking chart" id="chart_image">'
+
+#goes in application overview section
+APPLICATION_OVERVIEW_TABLE_SECTION: "<div id=\"application_overview_table_section\">sample</div>"
+
+#goes in application overview table section
+APPLICATION_DATA_SECTION: "<table id=\"application_overview_information_table\">
+                                         <tbody id=\"application_overview_information_table_body\">
+                                         <tr>
+                                             <th>Application Score</th>
+                                             <th>Number of Errors</th>
+                                             <th>Number of Pages</th>
+                                         </tr>
+
+                                             sample
+
+                                         </tbody>
+                                     </table>"
+
+
+
+APPLICATION_DATA_ROW: "<td>sample</td>"
