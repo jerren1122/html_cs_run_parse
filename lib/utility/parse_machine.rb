@@ -4,6 +4,7 @@ class ParseMachine
   def htmlcs_parse(violations, file_name)
     mod_output = iterate_violations(violations)
     write_csv(mod_output, file_name)
+
   end
 
   private

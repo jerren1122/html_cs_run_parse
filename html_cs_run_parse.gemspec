@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'html_cs_run_parse'
-  s.version     = '0.1.0'
+  s.version     = '0.1.2'
   s.summary     = "this allows for parsing and running of HTML Code Sniffer with Watir"
   s.description = ""
   s.authors     = ["Jerren Every"]

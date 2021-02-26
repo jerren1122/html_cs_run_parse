@@ -9,6 +9,10 @@ class HTMLCS
     output = browser.driver.manage.logs.get(:browser)
     parse = ParseMachine.new
     parse.htmlcs_parse(output, file_name)
+    browser.screenshot.save "#{file_name}.png"
+    File.open(file_name + ".txt", 'w+') { |file|
+      file.print(browser.url)
+    }
   end
 
   def self.compile_html_cs(data_location)
