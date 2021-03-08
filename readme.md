@@ -20,6 +20,12 @@ to -  console.error("[HTMLCS] "+t+"|"+e.code+"|"+n+"|"+i+"|"+e.msg+"|"+o)}};
 2. Build the Gem with the new file "gem build html_cs_run_parse" -be sure to increment the gemfile in the gemspec. 
 3. Push the gem up to RubyGems "gem push html_cs_run_parse-0.0.1.gem" -note the file version will change
 
+# **create_empty_directories**
+Execution: HTMLCS.create_empty_directories(root_directory_name) 
+The root_directory_name should be the root directory that html_cs utilizes to store its output. 
+it will ensure that these folders are empty and ready to go for the next html_cs run 
+
+
 # **run_html_cs** 
 Execution: HTMLCS.run_html_cs(browser, file_name) 
 
