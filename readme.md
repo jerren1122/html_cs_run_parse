@@ -11,7 +11,7 @@ this gem houses both the ability to run HTML Code Sniffer and Watir and includes
 from -  console.log("[HTMLCS] "+t+"|"+e.code+"|"+n+"|"+i+"|"+e.msg+"|"+o)}};
 to -  console.error("[HTMLCS] "+t+"|"+e.code+"|"+n+"|"+i+"|"+e.msg+"|"+o)}}; 
 3. Run the js file in the build directory as instructed in the instructions from the url above (this occurs in html_cs.rb)
-  --Note on the Wati side I have to scrape the driver after running html_cs as this is where the output occurs. without the changes in step 2 I would not be able to retrieve this information. 
+  --Note on the Watir side I have to scrape the driver after running html_cs as this is where the output occurs. without the changes in step 2 I would not be able to retrieve this information. 
 4. Place the new built HTMLCS.JS file in the lib directory along with the license.txt
 5. Update the gem with the steps below
 
