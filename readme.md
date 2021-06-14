@@ -60,6 +60,36 @@ Input should house the information that was generated via run_html_cs the output
 the data_location should also house in its root the graph_scores.yaml, scores.yaml and the suppressed_rules.yaml. Examples of these exist in this repo.  
 
 
+# **places to implement in Cucumber framework**
+**gemfile**
+
+in the Gemfile we are installing html_cs_run_parse
+  
+**env.rb**
+
+In the env.rb we are requiring 'html_cs_run_parse'
+
+**after_configuration hook**
+
+in the after configuration hook the html_cs_run_parse gem is generating (if necessary) the input, output and output/files locations necessary within the passed directory location within the HTML_CS directory location that we have setup. 
+Within the passed directory that houses the HTML_CS_DATA the html_cs_run_parse gem is ensuring that the folders above if they do exist are empty. 
+
+Note: the html_cs_data directory location already includes the yaml files for graph_scores, scores.yaml and suppressed_rules.yaml these are local to each team and therefore not part of the gem but necessary for the gem to run. 
+
+ 
+**before hook**
+
+In the before hook I am creating an instance variable that houses the HTML Code Sniffer file location
+
+**step_definition**
+In the step definition I am creating a file naming convention that matches what the HTMLCS Compilation tool expects(app_page name_environment)
+
+I am then passing the html_cs_location as well as the naming conventions to HTMLCS, along with the browser
+This will generate the csv, txt and png files. 
+
+**at_exit hook**
+
+In the at_exit hook I am running compile_html_cs and passing the HTML_CS_LOCATION to the gem. 
 
 # **Limitations:** 
 
