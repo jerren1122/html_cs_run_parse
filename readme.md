@@ -61,6 +61,11 @@ the data_location should also house in its root the graph_scores.yaml, scores.ya
 
 
 # **places to implement in Cucumber framework**
+
+**html_cs_data**
+this is a directory that should exist at the root of the framework. 
+should house the: graph_scores.yaml, suppressed_rules.yaml, scores.yaml 
+
 **gemfile**
 
 in the Gemfile we are installing html_cs_run_parse
